@@ -11,8 +11,8 @@ export const viewport: Viewport = { themeColor: "#037ef3", width: "device-width"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="min-h-screen antialiased">
+    <html lang="en" suppressHydrationWarning>
+      <body className="min-h-screen antialiased" suppressHydrationWarning>
         {children}
         <script
           dangerouslySetInnerHTML={{
